@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon"  sizes="250x100" href="icons/ticket.ico">
+    <link rel="shortcut icon"  sizes="250x100" href="icons/logo.ico">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -12,7 +12,8 @@
     <link href="css/index2.css" rel="stylesheet">
     <link rel="stylesheet" href="login.php">
     <link rel="stylesheet" href="index.php">
-    <link rel="stylesheet" href="tela_cadastro.php">
+    <link rel="stylesheet" href="cadastro_convidado.php">
+    <link rel="stylesheet" href="cadastro_organizador.php">
     
     <Title>TicketClick</Title>
 
@@ -20,35 +21,36 @@
   <body>
     <header>
     <nav class="navbar navbar-light bg-dark">
-              <div>
-              <img sizes="90" height="60"src= "icons/ticket.ico">
-      
-              <a class="navbar-brand text-white" href="index.php">TicketClick</a>
-              
-            </div>
-            <ul class="nav">
-            	<li class="nav-item">
-                    <a class="nav-link text-white" href="tela_cadastro2.php">Torne-se um organizador</a>
-                </li>
+      <div>
+        <img class="rounded-circle" sizes="70" height="70"src="img/logo.png">
+      </div>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="cadastro_organizador.php">Torne-se um organizador</a>
+        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="teste_login.php">Acesse sua conta</a>
-                </li>
-				
-                <li class="nav-item">
-                  <a class="btn btn-outline-primary" href="tela_cadastro.php">Cadastre-se</a>
-                </li>
-            </ul>
-          </nav>
-    </header>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="login.php">Acesse sua conta</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="btn btn-outline-primary me-2" href="cadastro_convidado.php">Cadastre-se</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
     <div class="texto-animado">
       <h1 class="animated fadeIn delay-04">
-            <span class="animated flipInX delay-06">Sejam</span><span class="animated flipInX delay-10">Bem-vindos</span>
-      </h1>
-                    
-      <p class="animated flipInX delay-15">TicketClick</p>
-                    
+        <span class="animated flipInX delay-06">Sejam</span><span class="animated flipInX delay-10">Bem-vindos</span>
+      </h1>          
+      <p class="animated flipInX delay-15">TicketClick</p>         
     </div>
+
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
     <div class="carousel-item">
@@ -166,7 +168,7 @@
           <!-- Content -->
           <h6 class="text-uppercase text-white fw-bold mb-4">
           <!-- <img src="icons/diamond.svg"></img> TicketClick -->
-          <i class="fas fa-gem me-"></i> Cadastro Regional de Comorbidades - CRC
+          <i class="fas fa-gem me-"></i> TicketClick
           </h6>
           <p class="text-white">
           O <strong>TicketClick</strong> é um site em desenvolvimento que tem a finalidade 

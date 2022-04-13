@@ -1,20 +1,28 @@
-function onChangeEmail() {
+function onChangeCPF() {
     toggleButtonsDisable();
     toggleEmailErrors();
 }
 
-function onChangePassword() {
+function onChangeCNPJ() {
     toggleButtonsDisable();
     togglePasswordErrors();
 } 
 
 function toggleEmailErrors() {
-    const email = document.getElementById("email").value;
-    if (!email) {
-        document.getElementById("email-required-error").style.display = "block";
+    const conta = document.getElementById("conta").value;
+    if (conta == 'CPF') {
+        document.getElementById("CPF").style.display = "block";
     } else {
-        document.getElementById("email-required-error").style.display = "none";
+        document.getElementById("CPF").style.display = "none";
     }
+
+    const conta2 = document.getElementById("conta").value;
+    if (conta2 == 'CNPJ') {
+        document.getElementById("CNPJ").style.display = "block";
+    } else {
+        document.getElementById("CNPJ").style.display = "none";
+    }
+    
     
     // if (validateEmail(email)) {
     //     document.getElementById("email-invalid-error").style.display = "none";

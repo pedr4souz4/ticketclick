@@ -13,6 +13,7 @@
         print_r('Senha: ' . $senha);
 
         $sql = "SELECT * FROM cadastro_convidado WHERE email = '$email' and senha = '$senha'";
+        $sql = "SELECT * FROM cadastro_organizador WHERE email = '$email' and senha = '$senha'";
 
         $result = $conexao->query($sql);
 
@@ -24,19 +25,19 @@
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
             
-            header('Location: teste_login.php');
+            header('Location: login.php');   
         }
         else
         {
             $_SESSION['email'] = 'email';
             $_SESSION['senha'] = 'senha';
-            header('Location: index.php');
+            echo "<script>alert('Bem vindo!');location.href=\"index.php\";</script>";  
         }
     }
     else
     {
         // Não Acessa
-        header('Location: teste_login.php');      
+        header('Location: login.php');     
         
     }
 

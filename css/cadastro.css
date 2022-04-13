@@ -1,69 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    text-align: center;
-    background-color:rgb(73, 173, 219);
-    /* background-image: url("../ca.jpg"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    
+  #CNPJ {
+    display: block;
   }
 
- h3 {
-
-      font-size: x-large;
-      color: rgb(252, 246, 246);
-      padding: 24px 12px;
-      text-align: center;
-      
+  #CPF {
+    display: block;
   }
-
-  #login .form-check {
-      padding: 6px 28px;
-
-  }
-
-  #login .form-group {
-    /*Comando para deixar o forms exatamente no meio*/
-    position:static;
-    top: 60px;
-    right: 300px; 
-    float: left;
-    text-align: left;
-
-    /* position: relative;
-    top: 60px;
-    right: 320px;
-    float: left;
-    text-align: left; */
-
-}
-
-  #teste {
-  font-size: 40px;
-  color: black;
-}
-
-  #login2 .form-group {
-    /*Comando para deixar o forms exatamente no meio*/
-    /* position: relative;
-    top: 60px;
-    right:10px; */
-
-    position: relative;
-    bottom: 20px;
-    left: 320px;
-    float: center;
-
-  }
-
-  /* #div_convidados {
-    display: none;
-  }
-
-  #div_organizador {
-    display: none;
-  } */
