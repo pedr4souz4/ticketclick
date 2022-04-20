@@ -13,7 +13,6 @@
         print_r('Senha: ' . $senha);
 
         $sql = "SELECT * FROM cadastro_convidado WHERE email = '$email' and senha = '$senha'";
-        $sql = "SELECT * FROM cadastro_organizador WHERE email = '$email' and senha = '$senha'";
 
         $result = $conexao->query($sql);
 

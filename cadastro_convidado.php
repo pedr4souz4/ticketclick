@@ -90,7 +90,7 @@
         <nav>
             <ul class="nav">
             <li class="nav-item">
-                <a class="btn btn-primary" href="index.php">Voltar</a>
+                <a class="btn btn-outline-primary" href="index.php">Voltar</a>
             </li>
             </ul>
           </nav> 
@@ -123,7 +123,7 @@
 					</div>
 
                     <div class="wrap-input100 validate-input">
-						<input class="input100" type="Phone" name="Phone" id="Phone" required maxlength="16">
+						<input class="input100" type="tel" name="Phone" id="Phone" required maxlength="11">
 						<span class="focus-input100" data-placeholder="Celular*"></span>
 					</div>
 
@@ -153,33 +153,39 @@
 					</div>
 
                     <div class="wrap-input100 validate-input">
+						<label class="text-muted" type="text">Rua*</label>
 						<input class="input100" type="text" name="endereco" id="endereco" required>
-						<span class="focus-input100" data-placeholder="Rua*"></span>
+						<!-- <span class="focus-input100" data-placeholder="Rua*"></span> -->
 					</div>
 
                     <div class="wrap-input100 validate-input">
+						<label class="text-muted" type="text">Bairro*</label>
 						<input class="input100" type="text" name="bairro" id="bairro" required>
-						<span class="focus-input100" data-placeholder="Bairro*"></span>
+						<!-- <span class="focus-input100" data-placeholder="Bairro*"></span> -->
 					</div>
 
                     <div class="wrap-input100 validate-input">
+						<label class="text-muted" type="text">Número*</label>
 						<input class="input100" type="text" name="numero" id="numero" required>
-						<span class="focus-input100" data-placeholder="Número*"></span>
+						<!-- <span class="focus-input100" data-placeholder="Número*"></span> -->
 					</div>
 
-                    <div class="wrap-input100 validate-input">
+                    <div class="wrap-input100">
+						<label class="text-muted" type="text">Complemento*</label>
 						<input class="input100" type="text" name="complemento" id="complemento">
-						<span class="focus-input100" data-placeholder="Complemento"></span>
+						<!-- <span class="focus-input100" data-placeholder="Complemento"></span> -->
 					</div>
 
                     <div class="wrap-input100 validate-input">
+						<label class="text-muted" type="text">Cidade*</label>
 						<input class="input100" type="text" name="cidade" id="cidade" required>
-						<span class="focus-input100" data-placeholder="Cidade*"></span>
+						<!-- <span class="focus-input100" data-placeholder="Cidade*"></span> -->
 					</div>
 
                     <div class="wrap-input100 validate-input">
+						<label class="text-muted" type="text">Estado*</label>
 						<input class="input100" type="text" name="estado" id="estado" required>
-						<span class="focus-input100" data-placeholder="Estado*"></span>
+						<!-- <span class="focus-input100" data-placeholder="Estado*"></span> -->
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate="Enter password">

@@ -4,25 +4,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon"  sizes="250x100" href="icons/logo.ico">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link href="css/index2.css" rel="stylesheet">
-    <link rel="stylesheet" href="login.php">
+    <link href="css/contato.css" rel="stylesheet">
+    <link rel="stylesheet" href="cadastrar.php">
     <link rel="stylesheet" href="index.php">
-    <link rel="stylesheet" href="cadastro_convidado.php">
-    <link rel="stylesheet" href="cadastro_organizador.php">
+    <link rel="stylesheet" href="ubs.php">
+    <link rel="stylesheet" href="medicamento.php">
+    <link rel="stylesheet" href="telainicial.php">
+    <link rel="icon" href="imagens/cruz.png">
     
-    <Title>TicketClick</Title>
+
+    <Title>Contate-nos - CRC</Title>
 
   </head>
   <body>
-    <header>
+  <header>
     <nav class="navbar navbar-light bg-dark">
       <div>
-        <img class="rounded-circle" sizes="70" height="70"src="img/logo.png">
+        <img class="rounded-circle" sizes="70" height="70" src="img/logo.png">
       </div>
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
@@ -43,84 +44,75 @@
       </ul>
     </nav>
   </header>
-
-    <div class="texto-animado">
-      <h1 class="animated fadeIn delay-04">
-        <span class="animated flipInX delay-06">Sejam</span><span class="animated flipInX delay-10">bem-vindos</span>
-      </h1>          
-      <p class="animated flipInX delay-15">TicketClick</p>         
-    </div>
-
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://f.i.uol.com.br/fotografia/2021/10/14/1634214754616823628bbc0_1634214754_3x2_lg.jpg" width="1500" height="500" alt="Primeiro Slide">
-      <div class="carousel-caption d-none d-md-block">
-      <h5 id="titulo">Coldplay</h5>
-      <p id="teste">Coldplay anuncia show em SP e outro no RJ, além do Rock in Rio</p>
-  </div>
-    </div>
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src="" alt="Segundo Slide">
-    </div> -->
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/28111_E0F1D56D3B62CA0F.jpg?w=876&h=484&crop=1" width="1500" height="500" alt="Terceiro Slide">
-      <div class="carousel-caption d-none d-md-block">
-      <h5 id="titulo">ROCK IN RIO 2022</h5>
-      <p id="teste">Ingressos para cinco dias de Rock in Rio esgotam nas primeiras horas de venda</p>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5 text-dark my-4">
-            <h1>Eventos em destaque</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="card" style="width: 18rem;">
-              <img src="" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dúvidas?</h5>
-                <p class="card-text">Tire sua dúvida via e-mail!</p>
-                <a href="contato.php" class="btn btn-primary">Acessar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card" style="width: 20rem;">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">?</h5>
-                <p class="card-text">Acesse para saber mais!</p>
-                <a href="" class="btn btn-primary">Acessar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card" style="width: 18rem;">
-              <img src="" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Acesse para mais informações sobre o site</h5>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Acessar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <br><br/>
-    </section>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <div class="container">
+        <h2 class="text-center"></h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 pb-5">
+
+
+                        <!--Form with header-->
+
+                        <form action="contato_enviar.php" method="post">
+                            <div class="card border-primary rounded-0">
+                                <div class="card-header p-0">
+                                    <div class="bg-gray text-black text-center py-2">
+                                        <h3><i class="fa fa-envelope"></i> Contate-nos</h3>
+                                        <p>Buscando sempre o melhor para você!</p>
+                                    </div>
+                                </div>
+                                <div class="card-body p-3">
+
+                                    <!--Body-->
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                            </div>
+                                            <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                            </div>
+                                            <input type="email" class="form-control" id="nombre" name="email" placeholder="E-mail" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-archive text-info"></i></div>
+                                            </div>
+                                            <input type="text" class="form-control" id="nombre" name="assunto" placeholder="Assunto" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                            </div>
+                                            <textarea class="form-control" name="mensagem" placeholder="Envia-nos sua mensagem" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <input type="submit" value="Enviar" class="btn btn-outline-primary btn-block rounded-0 py-2">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                        <!--Form with header-->
+                    </div>
+        </div>
+    </div>
+    <br><br/>
     <!-- Footer -->
 <footer class="text-center text-lg-start bg-dark text-muted">
   <!-- Section: Social media -->
@@ -214,4 +206,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
- 

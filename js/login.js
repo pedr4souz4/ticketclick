@@ -8,17 +8,17 @@ function onChangeCNPJ() {
     togglePasswordErrors();
 } 
 
-function toggleEmailErrors() {
-    const conta = document.getElementById("conta").value;
-    if (conta == 'CPF') {
-        document.getElementById("CPF").style.display = "block";
+function toggleAccount() {
+    const conta2 = document.getElementById("conta").value;
+    if (conta2 == 'CPF') {
+        document.getElementById("CPF").style.display = "none";
     } else {
         document.getElementById("CPF").style.display = "none";
     }
 
-    const conta2 = document.getElementById("conta").value;
-    if (conta2 == 'CNPJ') {
-        document.getElementById("CNPJ").style.display = "block";
+    const conta3 = document.getElementById("conta").value;
+    if (conta3 == 'CNPJ') {
+        document.getElementById("CNPJ").style.display = "none";
     } else {
         document.getElementById("CNPJ").style.display = "none";
     }

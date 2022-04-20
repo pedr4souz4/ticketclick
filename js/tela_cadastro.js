@@ -38,7 +38,7 @@ function limpa_formulário_cep() {
             //Preenche os campos com "..." enquanto consulta webservice.
             document.getElementById('endereco').value="...";
             document.getElementById('bairro').value="...";
-            document.getElementById('numero').value=("");
+            document.getElementById('numero').value=("...");
             document.getElementById('cidade').value="...";
             document.getElementById('estado').value="...";
 
