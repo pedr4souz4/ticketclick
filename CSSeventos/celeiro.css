@@ -12,10 +12,6 @@ body {
     
   }
 
-nav {
-  background: linear-gradient(55deg, rgb(57, 45, 231), purple);
-}
-
 @-webkit-keyframes borda-fadeout {
   100% {
     top: -12px;
@@ -91,7 +87,7 @@ nav {
 margin-top: 5%;
 font-size: 1.8em;
 display: inline-block;
-border-bottom: 1px #f4f3f3 solid;
+border-bottom: 1px #f50202 solid;
 
 }
 
@@ -100,13 +96,13 @@ border-bottom: 1px #f4f3f3 solid;
 position: relative;
 float: left;
 font-family: 'open_sansbold';
-color:#757575;
+color:#000000;
 
 }
 
 .texto-animado h1 span:first-child {
 
-color: #f95e5e;
+color: #000000;
 margin-right: 1rem;
 font-weight:bold;
 font-family: 'open_sansbold';
@@ -118,7 +114,7 @@ font-family: 'open_sansbold';
   width: auto;
   display: block;
   font-size: 0.9em;
-  color: #eb0404;
+  color: #2704eb;
   padding-top: 0.3em;
   letter-spacing: 4.5px;
 
@@ -256,3 +252,5 @@ animation-name: flipInX;
 -webkit-animation-name: fadeIn;
 animation-name: fadeIn;
 }
+
+  

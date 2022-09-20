@@ -8,7 +8,17 @@ body {
     background-size: 100% 100%;
     height: 100vh;
     text-align: center;
+    background: #ffad86;
   } 
+
+  .btn-primary {
+  
+    color: #143d59;
+    background-color: #ffad86;
+    border-color: #ffffff;
+  
+  
+      }
 
 #titulo {
   font-size: 34px;
@@ -18,6 +28,11 @@ body {
 #teste {
   font-size: 24px;
 } 
+
+nav {
+  /* background: linear-gradient(55deg, rgb(153, 222, 235), rgb(0, 54, 230));    */
+  background: #143d59;
+}
 
   /* footer{
       background: linear-gradient(55deg, rgb(57, 45, 231), purple) 
