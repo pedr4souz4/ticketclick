@@ -18,14 +18,16 @@ $data = date('d/m/Y H:i:s');
 if($email && $mensagem) {
 	$mail = new PHPMailer();
 	$mail->isSMTP();
-	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
-	$mail->Username = 'crcomorbidades@gmail.com';
-	$mail->Password = 'comorbidade21';
+	$mail->Username = 'ticketclick0@gmail.com';
+	$mail->Password = 'qmcwahiiliwnyhlv';
+	$mail->SMTPSecure = 'tls';
+
+	$mail->Host = 'smtp.gmail.com';
 	$mail->Port = 587;
-	
-	$mail->setFrom('crcomorbidades@gmail.com');
-	$mail->addAddress('crcomorbidades@gmail.com');
+
+	$mail->setFrom('ticketclick0@gmail.com');
+	$mail->addAddress('ticketclick0@gmail.com');
 	
 	$mail->isHTML(true);
 	$mail->Subject = $assunto;
@@ -35,15 +37,13 @@ if($email && $mensagem) {
 				   Data/hora: {$data}";
 	
 	if($mail->send()) {
-		echo 'Email enviado com sucesso';
-		header('Location: contato.php');
+		echo "<script>location.href=\"contato.php\";alert('Email enviado com sucesso!')</script>";
+
 	} else {
-		echo 'Email não enviado';
-		header('Location: contato.php');
+		echo "<script>location.href=\"contato.php\";alert('Email não enviado!')</script>";
 	}
 }  else {
-	echo 'Email não enviado: informar o email e a mensagem.';
-	header('Location: contato.php');
+	echo "<script>location.href=\"contato.php\";alert('Email não enviado: informar o email e a mensagem!')</script>";
 }
 
 ?>

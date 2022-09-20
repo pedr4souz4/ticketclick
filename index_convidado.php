@@ -1,8 +1,13 @@
+<?php
+  require 'verifica.php';
+  if(isset($_SESSION['idUser']) && !empty($_SESSION['idUser'])):
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>TicketClick</title>
-
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,12 +20,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" sizes="250x100" href="icons/icone-ticket.ico">
-
+    
   </head>
   <body>
     <header class="menu-nav">
       <nav class="container navbar navbar-expand-md navbar-dark">
-        <a href="index.php" class="navbar-brand">
+        <a href="index_.php" class="navbar-brand">
           <img src="img/ticketclick.svg" alt="TicketClick">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
@@ -28,14 +33,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="login_convidado.php">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cadastro_convidado.php">Inscrever-se</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn-menu btn ml-md-2" href="#organizador">Seja um organizador</a>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $nomeUser; ?></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="perfil/perfil_organizador.php">Minha Conta</a>
+              <a class="dropdown-item" href="#">Ingressos</a>
+              <a class="dropdown-item" href="#">Promoções</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="sair.php">Sair</a>
+            </div>
             </li>
           </ul>
         </div>  
@@ -70,36 +76,33 @@
         <span class="sr-only">Próximo</span>
       </a>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-      <!-- <div class="bg-header">
-        <img src="img/bg-header.png" alt="Festa">
-        <p>Coldplay anuncia mais um show em São Paulo no dia 19 de outubro</p>
-      </div> -->
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <section class="container eventos">
-      <h1>Eventos em destaque</h1>
 
-        <input type="text" id="txtBusca" onkeyup="pesquisar()" placeholder="Buscar..."/>
+      <h1>eventos em destaque</h1>
 
-      <br>
-        <ul class="row evento-lista" id="menu">
+        <ul class="row evento-lista">
           <li class="evento-item col-4">
             <img src="img/evento1.png" alt="Evento 1">
-            <a href="eventos/rockinrio.php">Rock</a>
+            <a href="login.php">Saiba mais</a>
           </li>
+
           <li class="evento-item col-4">
             <img src="img/evento2.png" alt="Evento 2">
             <a href="login.php">Saiba mais</a>
           </li>
+
           <li class="evento-item col-4">
             <img src="img/evento3.png" alt="Evento 3">
             <a href="login.php">Saiba mais</a>
@@ -108,23 +111,29 @@
             <img src="img/evento4.png" alt="Evento 4">
             <a href="login.php">Saiba mais</a>
           </li>
+
           <li class="evento-item col-4">
             <img src="img/evento5.png" alt="Evento 5">
             <a href="login.php">Saiba mais</a>
           </li>
+
           <li class="evento-item col-4">
             <img src="img/evento6.png" alt="Evento 6">
             <a href="login.php">Saiba mais</a>
           </li>
         </ul>
     </section>
-    <section class="organizador" id="organizador">
+
+    <section class="organizador">
+
       <h2>Seja um organizador</h2>
+
       <div class="card-index">
-        <div class="row container">
+
+        <div class=" row container">
           <div class="col-6">
             <h3 class="tit-org">Por que acreditamos que não é só organizar um evento, mas momentos.</h3>
-            <ul class="col-6 list-org">
+            <ul class=" col-6 list-org">
               <li>
                 <img class="marcador" src="icons/icone-ticket.ico" alt="ticket">
                 <p>Melhor exposição do seu evento. </p>
@@ -138,7 +147,7 @@
                 <p>Preço justo.</p>
               </li>
               <li>
-                <a href="cadastro_organizador.php">Cadastre-se já!</a>
+                <a href="#">Saiba mais</a>
               </li>
             </ul>
           </div>
@@ -146,8 +155,7 @@
         </div>
       </div>
     </section>
-    <!-- Footer -->
-  <footer class="text-center text-lg-start bg-dark text-muted">
+    <footer class="text-center text-lg-start bg-dark text-muted">
   <!-- Section: Social media -->
     <section
       class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -166,7 +174,7 @@
         <a href="" class="me-4 text-reset">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://mail.google.com/mail/u/2/#inbox" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset">
           <i class="fab fa-google"></i>
         </a>
         <a href="" class="me-4 text-reset">
@@ -193,7 +201,7 @@
             <!-- Content -->
             <h6 class="text-uppercase text-white fw-bold mb-4">
             <!-- <img src="icons/diamond.svg"></img> TicketClick -->
-            <i class="fas fa-gem me-1"></i> TicketClick
+            <i class="fas fa-gem me-"></i> TicketClick
             </h6>
             <p class="text-white">
             O <strong>TicketClick</strong> é um site em desenvolvimento que tem a finalidade 
@@ -234,7 +242,7 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/pesquisar.js"></script>
   </body>
 </html>
- 
+
+<?php else: header("Location: login.php"); endif; ?>
